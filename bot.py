@@ -22,7 +22,7 @@ async def on_message(message):
     if get_role(author.roles, "Member"):
         return
 
-    lurker = get_role(all_roles, "Lurker")
+    lurker = get_role(all_roles, "Lurkers")
     member = get_role(all_roles, "Member")
     await author.add_roles(member)
     await author.remove_roles(lurker)
